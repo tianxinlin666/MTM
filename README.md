@@ -20,7 +20,9 @@ cd MTM
 > You can download directly through the link We provided. 
 >
 > > http://120.26.160.25/package
-> > 
+
+
+```shell
 pip install -r requirements.txt
 ```
 
