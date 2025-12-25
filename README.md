@@ -17,31 +17,10 @@ cd MTM
 ```
 
 2. Create a conda environment and install the dependencies:
-
-> Since the installation of the Mamba library often encounters network issues, I have provided **a series of pre-downloaded local installation packages** for you.
+> You can download directly through the link We provided. 
 >
-> 
->
-> For users within China, you may consider using Baidu Netdisk links for downloads.
->
-> > 通过网盘分享的文件：package
-> > 链接: https://pan.baidu.com/s/1NGueqLXQAtAIpETzlZgrbw?pwd=3a7a 提取码: 3a7a
->
-> 
->
-> You can also choose to download directly through the link We provided. (Note: This link is slower than Baidu Netdisk.)
->
-> > http://120.26.160.25/package/
-
-```shell
-conda create -n mamfusion-env python=3.10
-conda activate mamfusion-env
-pip install torch-2.4.1+cu118-cp310-cp310-linux_x86_64.whl
-pip install torchaudio-2.4.1+cu118-cp310-cp310-linux_x86_64.whl
-pip install torchvision-0.19.1+cu118-cp310-cp310-linux_x86_64.whl
-conda install -c "nvidia/label/cuda-11.8.0" cuda-nvcc
-pip install mamba_ssm-2.2.1+cu118torch2.4cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
-pip install causal_conv1d-1.3.0.post1+cu118torch2.4cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
+> > http://120.26.160.25/package
+> > 
 pip install -r requirements.txt
 ```
 
@@ -80,14 +59,6 @@ For this repository, the expected performance is:
 | TVR | 16.0 | 38.4 | 49.2 | 86.8 | 190.4 |
 | ActivityNet Captions | 9.1 | 27.3 | 40.4 | 79.3 | 156.1 |
 | Charades-STA | 2.6 | 9.5 | 14.8 | 54.2 | 81.1 |
-
-
-
-We have also provided you with pre-trained models for verification.
-
-> http://120.26.160.25/Pre-trained-model/
-
-
 
 [MS-SL]:https://github.com/HuiGuanLab/ms-sl
 
